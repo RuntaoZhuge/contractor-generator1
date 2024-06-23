@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/contractor-generator1/static/css/main.357fa208.css",
+    "main.js": "/contractor-generator1/static/js/main.89445eed.js",
+    "static/js/453.baa7f4e9.chunk.js": "/contractor-generator1/static/js/453.baa7f4e9.chunk.js",
+    "static/media/signature.png": "/contractor-generator1/static/media/signature.03894b25f09fae6eb710.png",
+    "index.html": "/contractor-generator1/index.html",
+    "main.357fa208.css.map": "/contractor-generator1/static/css/main.357fa208.css.map",
+    "main.89445eed.js.map": "/contractor-generator1/static/js/main.89445eed.js.map",
+    "453.baa7f4e9.chunk.js.map": "/contractor-generator1/static/js/453.baa7f4e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.357fa208.css",
+    "static/js/main.89445eed.js"
+  ]
+}
