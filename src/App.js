@@ -66,7 +66,7 @@ function App() {
         style: 'normal',
       });
 
-      pdfMake.createPdf(documentDefinition).download('Internship_Agreement.pdf');
+      pdfMake.createPdf(documentDefinition).download(`${name} - Internship_Agreement.pdf`);
     } catch (error) {
       console.error('Error generating PDF:', error);
     }
