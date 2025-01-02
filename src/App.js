@@ -3,12 +3,14 @@ import htmlToPdfmake from 'html-to-pdfmake';
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
 import { imageToBase64 } from './utils';
+import Login from "./components/Login";
 import './App.css';
-import signatureImage from './signature.png'; // Import the signature image
+import signatureImage from './signature.png';
 
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
   const [startDate, setStartDate] = useState('');
@@ -71,6 +73,10 @@ function App() {
       console.error('Error generating PDF:', error);
     }
   };
+
+  if (!isLoggedIn) {
+    return <Login onLogin={() => setIsLoggedIn(true)} />;
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
